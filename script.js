@@ -9,7 +9,10 @@ function loadData(lang) {
       lang === 'ar' ? `<h2 id="name-ar" class="name-ar">${data.name_ar}</h2>`: `<h2 id="name-ar" class="name-ar">${data.name_en}</h2>`;
       document.getElementById('department').textContent =
         lang === 'ar' ? data.department_ar : data.department_en;
-
+      document.getElementById('survey-btn').textContent =
+        lang === 'ar' ? 'رأيك يهمنا!' : 'Give Us Your Opinion';
+      document.getElementById('website-btn').textContent =
+        lang === 'ar' ? 'اكتشف خدماتنا!' : 'Discover Our Services';
       document.getElementById('label-name').textContent =
         lang === 'ar' ? 'اسم الفني' : 'Technician Name';
       document.getElementById('label-dept').textContent =

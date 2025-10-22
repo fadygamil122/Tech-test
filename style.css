@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Cairo';
 }
 
 body {
@@ -21,13 +21,17 @@ body {
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 43, 128, 0.15);
   text-align: center;
-  padding: 20px;
-  width: 90%;
-  max-width: 350px;
+  padding: 1.1rem;
+  max-width: 500px;
   position: relative;
   align-items: center;
 }
-
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
 .photo {
   width: 180px;
   height: 180px;
@@ -59,12 +63,18 @@ body {
   color: black;
   font-weight: bolder;
 }
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .footer_logos{
     display: flex;
     width: 90%;
     margin: auto;
     align-items: center;
     justify-content: space-between;
+    direction: ltr;
 
 }
 .footer_logos img{
@@ -79,18 +89,21 @@ body {
 }
 
 .lang-btn {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: #0044cc;
+  background-color: #2980b9;
+  font-family: 'Cairo';
   color: #fff;
   border: none;
   border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   padding: 6px 10px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   cursor: pointer;
+   border: 2px solid #2980b9;
 }
 
 .lang-btn:hover {
-  background-color: #0033aa;
+  background-color:transparent;
+  border: 2px solid #2980b9;
+  color: black;
 }
