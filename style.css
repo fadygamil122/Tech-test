@@ -79,6 +79,7 @@ body {
 }
 .footer_logos img{
     width: 40%;
+    max-width: 150px;
     height: min-content;
 }
 
